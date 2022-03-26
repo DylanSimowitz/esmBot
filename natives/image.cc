@@ -30,6 +30,7 @@
 #include "snapchat.h"
 #include "speed.h"
 #include "sonic.h"
+#include "soyjak.h"
 #include "spin.h"
 #include "tile.h"
 #include "trump.h"
@@ -78,6 +79,7 @@ Napi::Object Init(Napi::Env env, Napi::Object exports)
   exports.Set(Napi::String::New(env, "snapchat"), Napi::Function::New(env, Snapchat));
   exports.Set(Napi::String::New(env, "speed"), Napi::Function::New(env, Speed));
   exports.Set(Napi::String::New(env, "sonic"), Napi::Function::New(env, Sonic));
+  exports.Set(Napi::String::New(env, "soyjak"), Napi::Function::New(env, Soyjak));
   exports.Set(Napi::String::New(env, "spin"), Napi::Function::New(env, Spin));
   exports.Set(Napi::String::New(env, "swirl"), Napi::Function::New(env, Swirl));
   exports.Set(Napi::String::New(env, "tile"), Napi::Function::New(env, Tile));
